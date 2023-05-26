@@ -44,18 +44,15 @@
               <i class="ion-search"></i>
               <div class="logo-description">Search</div>
             </div>
-            <div
-              class="icon-container"
-              onclick="alert('this feature is not available at the moment.')"
-            >
-              <i class="ion-android-compass"></i>
+            <div class="icon-container" onclick="openReels()">
+              <i class="ion-videocamera"></i>
               <div class="logo-description">Reels</div>
             </div>
             <div
               class="icon-container"
               onclick="alert('this feature is not available at the moment.')"
             >
-              <i class="ion-videocamera"></i>
+              <i class="ion-android-compass"></i>
               <div class="logo-description">Explore</div>
             </div>
             <div class="icon-container" id="btnMessage">
@@ -165,6 +162,175 @@
               </div>
             </div>
             <!-- END OF NOTIFICTION -->
+            <div class="reelContent" id="reelsContent">
+              <div class="container2-title">
+                <span style="cursor: default">Reels</span>
+                <span style="cursor: pointer"
+                  ><i
+                    class="ion-close-round"
+                    onclick="closeReelSide()"
+                    style="cursor: pointer"
+                  ></i
+                ></span>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  padding-top: 30px;
+                  color: rgb(172, 166, 166);
+                  margin-bottom: 30px;
+                "
+              >
+                Available for you
+              </div>
+              <div class="reelsVideos">
+                <div class="reelsItemContainer" style="margin-top: 5px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      font-size: small;
+                      font-weight: bold;
+                      column-gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/271758767_5169864929693338_2838625732645120451_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=aUngc__Pf-YAX_P6S0y&_nc_ht=scontent.fmnl4-5.fna&oh=00_AfBrJKCvwNFRnOn5NM2spLciygpOmRyEWxp-BR9kKV4H4w&oe=647527E5"
+                      alt=""
+                      class="small-avatar"
+                    />
+                    <span>Ronel Talavera</span>
+                  </div>
+                  <div class="reelsItem">
+                    <video autoplay loop muted playsinline class="videoConfig">
+                      <source
+                        src="https://v16m-default.akamaized.net/90b5a73c144f24e27dff828014e11bc6/64706f90/video/tos/maliva/tos-maliva-ve-0068c799-us/095c17d9b6574adeafa0d32248cbe2cb/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=2112&bt=1056&cs=0&ds=6&ft=dl9~j-Inz7TuzcZfiyq8Z&mime_type=video_mp4&qs=0&rc=Z2YzOTY2Mzg1ZjlkNjNlOEBpMzh1cDQ6ZnJqajMzZzczNEAuNTA0XjZiNS4xXjA0XmEzYSM1YGEucjRvcV5gLS1kMS9zcw%3D%3D&l=20230526023551DC0BAAB733A080546B91&btag=e00080000"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="reelsItemContainer">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      font-size: small;
+                      font-weight: bold;
+                      column-gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/322737339_1514532995692428_5438666049942194987_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PuPjZPMaJc4AX8_ZDEg&_nc_ht=scontent.fmnl4-5.fna&oh=00_AfDctzluHm-LmmgHOpCRjr9a8qtEHnArfIwpZ0vUAfG_Hg&oe=6475CCE6"
+                      alt=""
+                      class="small-avatar"
+                    />
+                    <span>Wilbert De Guzman</span>
+                  </div>
+                  <div class="reelsItem">
+                    <video autoplay loop muted playsinline class="videoConfig">
+                      <source
+                        src="https://v16m-default.akamaized.net/797be48666093dc16311735cf14baf1c/64706fa4/video/tos/useast2a/tos-useast2a-ve-0068c004/oAUIC9iBhfA86FQoEIBzkzm56zWGyLyvhgKtAx/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=1900&bt=950&cs=0&ds=6&ft=dl9~j-Inz7TuzcZfiyq8Z&mime_type=video_mp4&qs=0&rc=MzZpN2lmPDw4ODg6ZDplOUBpam11NWU6ZnNvajMzNzczM0BfYzEvNWNgXjYxLzYvLmIxYSMtZ2hycjRvZmtgLS1kMTZzcw%3D%3D&l=20230526023551DC0BAAB733A080546B91&btag=e00080000"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="reelsItemContainer">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      font-size: small;
+                      font-weight: bold;
+                      column-gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/341897725_209031435171291_3718292033454615765_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=RnITj0HTCv4AX-woQR_&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfA1QFfEVigy-opLCaugr6aaJMJ5IhHe2iZFYDscXRyMLg&oe=647513DC"
+                      alt=""
+                      class="small-avatar"
+                    />
+                    <span>Jayson Ilao</span>
+                  </div>
+                  <div class="reelsItem">
+                    <video autoplay loop muted playsinline class="videoConfig">
+                      <source
+                        src="https://v16m-default.akamaized.net/37e4144784303696e08db052707dc222/64707e20/video/tos/maliva/tos-maliva-ve-0068c799-us/o07BQk6WD1MaAeDtnQSIpgDpSdBQBQnDEUVbRe/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=1374&bt=687&cs=0&ds=6&ft=dl9~j-Inz7TotWZfiyq8Z&mime_type=video_mp4&qs=0&rc=OTtoZmk6ODM6ZWQ8Zmk2aEBpM3hxcTQ6Zjp0azMzZzczNEBgYDQtYTRjXzMxNjFfYzE2YSM1NF9pcjRfNS1gLS1kMS9zcw%3D%3D&l=2023052603381900CA95E5127136593626&btag=e00080000"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="reelsItemContainer">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      font-size: small;
+                      font-weight: bold;
+                      column-gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/56632012_10155838491622691_2218064524907380736_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=d_GtEw5_X3IAX8fnEbP&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfAebPyBpw6gsABTfU_JGCSSmdbpRE9Tcgd_18P5HN5E3w&oe=6497B381"
+                      alt=""
+                      class="small-avatar"
+                    />
+                    <span>Norman Drei Flores</span>
+                  </div>
+                  <div class="reelsItem">
+                    <video autoplay loop muted playsinline class="videoConfig">
+                      <source
+                        src="https://v16m-default.akamaized.net/1a6700878cd72fca8367a280ddb5f021/64707e29/video/tos/maliva/tos-maliva-ve-0068c799-us/5a15d5f92f164867a13c3c53d2a6300b/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=3174&bt=1587&cs=0&ds=6&ft=dl9~j-Inz7TotWZfiyq8Z&mime_type=video_mp4&qs=0&rc=ZWY8NGVmZzxlZjRkaTU2OEBpMzU1cGk6ZjxxaTMzZzczNEA0YWJhXmAxXzMxNTMzLS8uYSNnM3AzcjRvMXFgLS1kMS9zcw%3D%3D&l=2023052603381900CA95E5127136593626&btag=e00080000"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+                <div class="reelsItemContainer">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-start;
+                      font-size: small;
+                      font-weight: bold;
+                      column-gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.6435-9/79369523_423273655221716_1102185416716451840_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=BKNmL_YqzzkAX91m5zU&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfDC2b1Ykjv883ETBS14GGp1YhoDkdfxWgzu_BZv8TE0LA&oe=649799F8"
+                      alt=""
+                      class="small-avatar"
+                    />
+                    <span>Carlos Andrae</span>
+                  </div>
+                  <div class="reelsItem">
+                    <video autoplay loop muted playsinline class="videoConfig">
+                      <source
+                        src="https://v16m-default.akamaized.net/630ba82b3440107fb26eade55d666035/64707e34/video/tos/maliva/tos-maliva-ve-0068c799-us/4f70edceada74560a1653d2b8d82e6bc/?a=0&ch=0&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&cv=1&br=1914&bt=957&cs=0&ds=6&ft=dl9~j-Inz7TotWZfiyq8Z&mime_type=video_mp4&qs=0&rc=ZDplNjs5NjM0ZmVoaDc7OUBpM3d2djo6ZjY3aTMzZzczNEA2L2BiLV9eNjUxYjAuNGBjYSNiYmFzcjRvZHNgLS1kMS9zcw%3D%3D&l=2023052603381900CA95E5127136593626&btag=e00080000"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- REELS SECTION -->
+            <!-- END OF REELS SECTION -->
           </div>
         </div>
       </div>

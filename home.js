@@ -16,11 +16,37 @@ const statusModal = document.getElementById("statusModal");
 const notificationContent = document.getElementById("notificationContent");
 const btnClose = document.getElementById("btnClose");
 const sideModal = document.getElementById("sideModal");
+const reelsContent = document.getElementById("reelsContent");
 // SIDE MODAL
+function openReels() {
+  sideModal.style.display = "flex";
+  reelsContent.style.display = "flex";
+  myLogo.style.display = "none";
+  // close other
+  searchContent.style.display = "none";
+  notificationContent.style.display = "none";
+
+  for (let i = 0; i < logoDescriptions.length; i++) {
+    logoDescriptions[i].style.display = "none";
+  }
+}
+
+function closeReelSide() {
+  sideModal.style.display = "none";
+  reelsContent.style.display = "none";
+  myLogo.style.display = "flex";
+  searchContent.style.display = "none";
+  notificationContent.style.display = "none";
+  for (let i = 0; i < logoDescriptions.length; i++) {
+    logoDescriptions[i].style.display = "flex";
+  }
+}
+
 function closeSearchSide() {
   myLogo.style.display = "flex";
   searchContent.style.display = "none";
   sideModal.style.display = "none";
+  reelsContent.style.display = "none";
   for (let i = 0; i < logoDescriptions.length; i++) {
     logoDescriptions[i].style.display = "flex";
   }
@@ -28,6 +54,7 @@ function closeSearchSide() {
 }
 
 function openSearchSide() {
+  reelsContent.style.display = "none";
   sideModal.style.display = "flex";
   searchContent.style.display = "flex";
   myLogo.style.display = "none";
@@ -56,6 +83,7 @@ burgerClose.onclick = () => {
 function openNotifSide() {
   notificationContent.style.display = "flex";
   searchContent.style.display = "none";
+  reelsContent.style.display = "none";
   sideModal.style.display = "flex";
   myLogo.style.display = "none";
   for (let i = 0; i < logoDescriptions.length; i++) {
