@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fan-card.css" />
+
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- end of meta -->
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="inner-container">
+        <div class="logo">
+          <img class="logo-img" src="./assets/artiflex.png" alt="logo" />
+        </div>
+        <div class="form">
+          <input
+            type="text"
+            class="input-box"
+            required
+            placeholder="Username , Email or Phone Number"
+          />
+          <input
+            type="password"
+            class="input-box"
+            required
+            placeholder="Password"
+          />
+          <button class="btn" id="btnLogin">Log in</button>
+        </div>
+        <div style="text-align: center; opacity: 0.5; margin-top: 10px">
+          <hr />
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div class="icon-container">
+            <i class="ion-social-facebook socialite"></i>
+            Login with Facebook
+          </div>
+          <a href="#" class="link" style="margin-top: 30px"
+            >Forgot password ?</a
+          >
+        </div>
+      </div>
+      <div class="inner-container-bottom">
+        <div>Don't have an account ?</div>
+        <div class="sign-up">Sign up</div>
+      </div>
+    </div>
+    <!-- <div style="width: 200px" class="div-spacing"></div> -->
+    <!-- second part -->
+    <div class="card-container">
+      <div class="big-card big-card1"></div>
+      <div class="big-card big-card2"></div>
+      <div class="big-card big-card3"></div>
+      <div class="big-card big-card4"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
