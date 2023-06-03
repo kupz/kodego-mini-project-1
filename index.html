@@ -55,7 +55,7 @@
       </div>
       <div class="inner-container-bottom">
         <div>Don't have an account ?</div>
-        <div class="sign-up">Sign up</div>
+        <div class="sign-up" onclick="signUpTrigger()">Sign up</div>
       </div>
     </div>
     <!-- <div style="width: 200px" class="div-spacing"></div> -->
@@ -66,6 +66,29 @@
       <div class="big-card big-card3"></div>
       <div class="big-card big-card4"></div>
     </div>
+
+    <!-- signup modal -->
+    <div
+      class="signup-modal-container"
+      id="signup-modal"
+      onclick="signUpTriggerClose()"
+    >
+      <div class="sign-up-container">
+        <span>Sign Up</span>
+        <div class="form-container">
+          <input class="input-box" type="email" placeholder="Full Name" />
+          <input class="input-box" type="email" placeholder="Email" />
+          <input class="input-box" type="password" placeholder="Password" />
+          <input
+            class="input-box"
+            type="password"
+            placeholder="Re-enter Password"
+          />
+          <button class="btn" onclick="signUpTriggerClose()">Sign up</button>
+        </div>
+      </div>
+    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>
